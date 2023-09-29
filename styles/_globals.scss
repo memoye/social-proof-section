@@ -1,0 +1,20 @@
+// COLORS
+
+// Primary
+$vDMagenta: hsl(300, 43%, 22%);
+$softPink: hsl(333, 80%, 67%);
+
+// Neutral
+$dGrayMag: hsl(303, 10%, 53%);
+$lGrayishMag: hsl(300, 24%, 96%);
+
+$priFont: 'League Spartan', sans-serif;
+
+$star: url(../images/icon-star.svg);
+
+@mixin centerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

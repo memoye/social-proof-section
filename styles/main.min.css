@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+}
+
+main {
+  width: 1024px;
+  max-width: 1440px;
+  display: grid;
+  padding: 1em;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5em;
+  -moz-column-gap: 7rem;
+       column-gap: 7rem;
+  font-size: 1.5rem;
+}
+
+.intro {
+  color: hsl(300, 43%, 22%);
+}
+.intro__title {
+  font-size: 10vmin;
+  margin-bottom: 2rem;
+}
+.intro__desc {
+  line-height: 1.5;
+}
+
+.rating {
+  display: grid;
+  align-content: center;
+  gap: 1em;
+  color: hsl(300, 43%, 22%);
+}
+.rating__platforms {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background: hsl(300, 24%, 96%);
+  padding: 0.5em 1.15em;
+  border-radius: 10px;
+}
+.rating__platforms::before {
+  content: "";
+  background-repeat: space;
+  display: inline-block;
+  background-image: url(../images/icon-star.svg);
+  width: 7.2rem;
+  height: 1.125em;
+}
+.rating__platforms:nth-child(2) {
+  justify-self: center;
+}
+.rating__platforms:nth-child(3) {
+  justify-self: end;
+}
+
+.testimonies {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  grid-column: 1/span 2;
+}
+.testimonies .testifier {
+  display: grid;
+  place-content: center;
+  background: hsl(300, 43%, 22%);
+  color: hsl(300, 24%, 96%);
+  height: 90%;
+  padding: 1.5em;
+  border-radius: 1rem;
+}
+.testimonies .testifier:nth-child(2) {
+  align-self: center;
+}
+.testimonies .testifier:nth-child(3) {
+  align-self: end;
+}
+.testimonies .testifier__profile {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 0.25em 1em;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1rem;
+  align-items: center;
+}
+.testimonies .testifier__profile__img {
+  border-radius: 50%;
+  width: 3em;
+  grid-row: 1/span 2;
+}
+.testimonies .testifier__profile__name {
+  color: hsl(300, 24%, 96%);
+}
+.testimonies .testifier__profile__role {
+  color: hsl(333, 80%, 67%);
+}
+.testimonies .testifier__quote {
+  color: hsl(300, 24%, 96%);
+  margin-top: 1rem;
+  line-height: 1.25;
+}
+
+@media screen and (max-width: 786px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  main > * {
+    width: 100%;
+  }
+  .intro {
+    text-align: center;
+  }
+  .rating {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .rating__platforms {
+    flex-direction: column;
+    width: 100%;
+  }
+  .testimonies {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.min.css.map */
