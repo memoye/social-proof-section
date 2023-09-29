@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- You can see [my solution here](https://www.frontendmentor.io/solutions/crowdfunding-product-page-using-reactjs-and-scss-8A7LR4sHcV)
-- View the [live site demo here](https://crowdfunding-product-page-mu-six.vercel.app/)
+- You can see [my solution here](https://www.frontendmentor.io/solutions/social-proof-section-solution-B8kGBlUJRO)
+- View the [live site demo here](https://social-proof-section-five-beige.vercel.app/)
 
 ## My process
 
